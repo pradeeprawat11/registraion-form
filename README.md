@@ -3,4 +3,4 @@ A simple registraion form which display the inputs in the form of object and sho
 
 
 
-![Form](https://drive.google.com/file/d/101fdIRcGXr9QpMdW7kf1DA45OpTL8mpo/view?usp=drive_link)
+![Registraion Form Template](https://github.com/pradeeprawat11/registraion-form/assets/88647301/f656e45d-62df-4c1d-a618-a688a081292d)
