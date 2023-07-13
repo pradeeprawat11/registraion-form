@@ -1,5 +1,5 @@
 # Registeration Form - HTML, CSS, JavaScript
-A simple registraion form which display the inputs in the form of object and show on next page in the form of string.
+A simple registraion form which take the inputs and store in the form of object and show on next page in the form of string.
 
 
 
