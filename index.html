@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Task 1 Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="form">
+
+            <form action="" id="myForm">
+                <div class="inputs">
+                    <label for="fName">First Name</label>
+                    <input id="fName" name="fname" type="text">
+                </div>
+                <div class="inputs">
+                    <label for="lName">Last Name</label>
+                    <input type="text" name="lName" id="lName"><br>
+                </div>
+                <div class="inputs">
+                    <label for="birth">Birth Date</label>
+                <input type="date" name="birth" id="birth"><br>
+                </div>
+                <div class="inputs">
+                    <label for="email">Email</label>
+                <input type="email" name="email" id="email"><br>
+                </div>
+                <div class="inputs">
+                    <label for="phone">Phone</label>
+                <input type="number" name="phone" id="phone"><br>
+                </div>
+                <div class="inputs">
+                    <label for="company">Company</label>
+                <input type="text" name="company" id="company"><br>
+                </div>
+                <div class="inputs">
+                    <label for="country">Country</label>
+                <input type="text" name="country" id="country"><br>
+                </div>
+                <div class="inputs">
+                    <label for="mailing-address">mailing Address</label>
+                <input type="text" name="mailing-address" id="mailing-address"><br>
+                </div>
+                <div class="inputs">
+                    <label for="Comment">Comment</label>
+                <input type="text" name="Comment" id="comment"><br>
+                </div>
+                <div class="inputs">
+                    <label for="currDate">Current Date</label>
+                <input type="date" name="currDate" id="currDate"><br>
+                </div>
+                <div class="inputs">
+                    <label for="Signature">Signature</label>
+                    <input type="text" name="Signature" id="signature"><br>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        // console.log('Hello')
+        
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', callBackFun);
+        
+        function callBackFun(e) {
+            e.preventDefault();
+            const myFormData = new FormData(e.target);
+
+            const formDataObj = {};
+            myFormData.forEach((value, key) => (formDataObj[key] = value));
+
+            var str = JSON.stringify(formDataObj);
+
+            document.write(str);
+
+            console.log(myFormData)
+        }
+
+    </script>
+</body>
+</html>

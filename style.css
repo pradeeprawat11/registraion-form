@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 1rem 30rem;
+}
+.container h1{
+    background-color: #808080b1;
+    text-align: left;
+    padding: 1rem 5rem;
+    color: white;
+}
+
+form {
+    padding: 2rem 0rem;
+}
+.inputs {
+    /* height: 3rem; */
+    margin: 1rem 0;
+}
+
+input {
+    border: none;
+    height: 2rem;
+    width: 20rem;
+    
+}
+
+label {
+    float: left;
+    margin-left: 5rem;
+    width: 10rem;
+    display: flex;
+}
+
+button {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #2d2da9;
+    color: white;
+    cursor: pointer;
+}
+
+#mailing-address {
+    height: 5rem;
+}
+
+#comment {
+    height: 5rem;
+}
+
+#signature {
+    height: 5rem;
+    width: 10rem;
+    margin-left: -10rem;
+}
+
+.form {
+    margin: 0rem 0rem;
+    background-color: #8080804d;
+}
+
+button:hover {
+    background-color: rgb(42, 37, 109);
+}
+
+sub {
+    margin-left: -14rem;
+}
